@@ -1,0 +1,193 @@
+/*Desing Responsive Iphone 12 */
+
+header {
+  font-size: 60px;
+}
+
+.input {
+
+  position: absolute;
+  width: 400px;
+  height: 48px;
+  left: -100px;
+  top: 210px;
+
+}
+
+label {
+  position: absolute;
+  width: 688px;
+  height: 48px;
+  left: -100px;
+  top: 240px;
+  font-size: 35px;
+}
+
+.input:focus~label,
+.input:valid~label {
+  top: 190px;
+  font-size: 28px;
+  color: #6e8b81;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 425px;
+  top: 280px;
+  left: -100px;
+
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5e7e72;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+
+}
+
+/* card */
+
+.container {
+  top: 1000px;
+  height: 700px;
+
+}
+
+.card {
+  top: 240px;
+  left: 150px;
+
+}
+
+.container-p {
+  font-size: 25px;
+  left: 200px;
+
+
+}
+
+
+/* Warning*/
+
+.advertencia {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 429px;
+  height: 18px;
+  left: 50px;
+  top: 725px;
+  font-size: 20px;
+}
+
+/*Copy Text */
+
+.copiar-text {
+  top: 1730px;
+  width: 400px;
+  left: 150px;
+  padding: 18px 1px 1px 175px;
+  box-shadow: none;
+  font-size: 20px;
+}
+
+/*Botnes */
+
+.buton-Encrypt {
+  top: 768px;
+  left: 50px;
+  width: 600px;
+  height: 70px;
+  font-size: 20px;
+  padding: 24px 100px 0 270px;
+  display: flex;
+  position: absolute;
+}
+
+.buton-Encrypt:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  border-radius: 24px;
+  background-color: #968165;
+  z-index: -1;
+}
+
+.buton-Encrypt:hover,
+button:focus {
+  color: #4b3f2f;
+}
+
+.buton-Encrypt:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buton-Encrypt:active {
+  transform: scale(0.9);
+}
+
+
+/* buton -> Decrypt */
+.buton-Decrypt {
+  top: 880px;
+  left: 50px;
+  width: 600px;
+  height: 70px;
+  font-size: 20px;
+  padding: 24px 100px 0 270px;
+  display: flex;
+  position: absolute;
+}
+
+.buton-Decrypt:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  border-radius: 24px;
+  background-color: #968165;
+  z-index: -1;
+}
+
+.buton-Decrypt:hover,
+button:focus {
+  color: #4b3f2f;
+}
+
+.buton-Decrypt:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buton-Decrypt:active button {
+  transform: scale(0.9);
+}

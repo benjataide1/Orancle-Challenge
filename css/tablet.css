@@ -1,0 +1,299 @@
+
+/* width: 767 ,heigt: 1174 or 1124 */
+
+header {
+
+  position: absolute;
+  width: 31.09px;
+  height: 50.58px;
+  left: 40px;
+  top: 73.42px;
+
+}
+
+/* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  font-size: 30px;
+  position: absolute;
+  width: 120px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+  gap: 40px;
+  color: #4F4537;
+  text-decoration: underline 2px; */
+
+.input {
+
+  position: absolute;
+  width: 400px;
+  height: 45px;
+  left: -100px;
+  top: 210px;
+
+}
+
+.input:focus {
+  outline: none;
+}
+
+label {
+  position: absolute;
+  width: 688px;
+  height: 48px;
+  left: -100px;
+  top: 240px;
+}
+
+.input:focus~label,
+.input:valid~label {
+  top: 209px;
+  font-size: 18px;
+  color: #6e8b81;
+}
+
+
+.bar {
+  position: relative;
+  display: block;
+  width: 425px;
+  top: 278px;
+  left: -100px;
+
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5e7e72;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus~.highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: none;
+
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+/*card */
+
+
+.container {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  left: 100px;
+  top: 900px;
+  border: 2px solid #4f4537;
+  border-radius: 32px;
+  box-shadow: none;
+}
+
+.card {
+  top: -20px;
+  left: 150px;
+}
+
+.container-p {
+  left: 195px;
+}
+
+
+/* Warning */
+
+.advertencia {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 429px;
+  height: 18px;
+  left: 30px;
+  top: 758px;
+  font-size: 15px;
+}
+
+
+/*Copy Text */
+
+
+.copiar-text {
+
+  padding: 24px 155px 0 148px;
+  width: 280px;
+  padding: 18px 1px 1px 118px;
+  height: 60px;
+  left: 195px;
+  top: 1110px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 24px;
+  letter-spacing: 1px;
+  bottom: 40px;
+  right: 1000px;
+  color: #4F4537;
+  background-color: #af9a7f;
+  transition: all 300ms ease 0ms;
+  box-shadow: 30px 18px 22px rgba(25, 25, 23, 0.2);
+
+}
+
+
+/*buton */
+.buton-Encrypt {
+  width: 300px;
+  height: 66px;
+  left: 30px;
+  top: 808px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+  letter-spacing: 1px;
+  z-index: 99;
+  bottom: 40px;
+  right: 1000px;
+  position: fixed;
+  z-index: 99;
+  color: #4F4537;
+  background-color: #af9a7f;
+  transition: all 300ms ease 0ms;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  display: flex;
+  position: absolute;
+  padding: 24px 100px 0 115px;
+}
+
+.buton-Encrypt:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  border-radius: 24px;
+  background-color: #968165;
+  z-index: -1;
+}
+
+.buton-Encrypt:hover,
+button:focus {
+  color: #4b3f2f;
+}
+
+.buton-Encrypt:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buton-Encrypt:active {
+  transform: scale(0.9);
+}
+
+
+
+/* buton -> Decrypt */
+
+.buton-Decrypt {
+  width: 300px;
+  height: 67px;
+  left: 375px;
+  top: 808px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+  letter-spacing: 1px;
+  bottom: 40px;
+  right: 1000px;
+  position: fixed;
+  z-index: 99;
+  color: #4F4537;
+  background-color: #af9a7f;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: absolute;
+  padding: 24px 100px 0 115px;
+
+}
+
+.buton-Decrypt:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  border-radius: 24px;
+  background-color: #968165;
+  z-index: -1;
+}
+
+.buton-Decrypt:hover,
+button:focus {
+  color: #4b3f2f;
+}
+
+.buton-Decrypt:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buton-Decrypt:active button {
+  transform: scale(0.9);
+}
